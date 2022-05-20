@@ -10,11 +10,7 @@ const routes = [{
         path: '/',
         name: 'Home',
         component: () =>
-<<<<<<< HEAD
             import ( /* webpackChunkName: "Home" */ '../views/Home.vue')
-=======
-            import ( /* webpackChunkName: "Home" */ '../views/Home.vue'),
->>>>>>> ba505ad40ac95d1d9237b2f541711673a885d338
     },
 ]
 const router = new VueRouter({
