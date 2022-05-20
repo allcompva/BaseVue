@@ -11,9 +11,6 @@ const routes = [{
         name: 'Home',
         component: () =>
             import ( /* webpackChunkName: "Home" */ '../views/Home.vue'),
-        meta: {
-            ambiente: []
-        }
     },
 ]
 const router = new VueRouter({
