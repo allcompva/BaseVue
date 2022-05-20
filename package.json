@@ -12,7 +12,12 @@
     "core-js": "^3.8.3",
     "vue": "^2.6.14",
     "vue-router": "^3.5.4",
+<<<<<<< HEAD
     "vuetify": "^2.6.6"
+=======
+    "vuetify": "^2.6.6",
+    "yarn": "^1.22.18"
+>>>>>>> 0e66ff8fe0051a596ea1a909d36f61ffe0341e31
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
