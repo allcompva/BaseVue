@@ -7,7 +7,6 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 const routes = [{
-<<<<<<< HEAD
     path: '/',
     name: 'Home',
     component: () =>
@@ -16,14 +15,6 @@ const routes = [{
         ambiente: []
     }
 }, ]
-=======
-        path: '/',
-        name: 'Home',
-        component: () =>
-            import ( /* webpackChunkName: "Home" */ '../views/Home.vue')
-    },
-]
->>>>>>> 0e66ff8fe0051a596ea1a909d36f61ffe0341e31
 const router = new VueRouter({
     mode: 'history',
     base: process.env.BASE_URL,
