@@ -22,6 +22,8 @@ axios.defaults.headers.common['Access-Control-Allow-Methods'] = '*';
 axios.defaults.headers.common['Access-Control-Allow-Headers'] = '*';
 axios.defaults.headers.common['Access-Control-Allow-Credentials'] = '*';
 Vue.prototype.$http = axios;
+Vue.prototype.$httpAnonimo = axios;
+Vue.prototype.$storage = $storage;
 
 new Vue({
     render: h => h(App),
