@@ -21,24 +21,9 @@ axios.defaults.headers.common['Access-Control-Allow-Origin'] = window.location.o
 axios.defaults.headers.common['Access-Control-Allow-Methods'] = '*';
 axios.defaults.headers.common['Access-Control-Allow-Headers'] = '*';
 axios.defaults.headers.common['Access-Control-Allow-Credentials'] = '*';
-<<<<<<< HEAD
 new Vue({
     render: h => h(App),
     router,
     vuetify,
     axios,
 }).$mount('#app')
-=======
-
-Vue.prototype.$http = axios;
-Vue.prototype.$httpAnonimo = axios;
-Vue.prototype.$storage = $storage;
-
-Vue.use(vuetify);
-export default new Vue({
-  router,
-  vuetify,
-  axios,
-  render: h => h(App),
-}).$mount('#app')
->>>>>>> DevMartin
