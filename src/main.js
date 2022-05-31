@@ -21,6 +21,8 @@ axios.defaults.headers.common['Access-Control-Allow-Origin'] = window.location.o
 axios.defaults.headers.common['Access-Control-Allow-Methods'] = '*';
 axios.defaults.headers.common['Access-Control-Allow-Headers'] = '*';
 axios.defaults.headers.common['Access-Control-Allow-Credentials'] = '*';
+Vue.prototype.$http = axios;
+
 new Vue({
     render: h => h(App),
     router,
