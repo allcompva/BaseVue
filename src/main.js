@@ -4,7 +4,9 @@ import router from './router'
 //import router from 'router.js'
 //import router from 'vue-router'
 import axios from 'axios'
-import vuetify from './plugins/vuetify'
+import vuetify from '@/plugins/vuetify' // path to vuetify export
+import $storage from './plugins/storage';
+
 
 Vue.config.productionTip = false
 if (process.env.NODE_ENV == 'development') {
@@ -19,9 +21,24 @@ axios.defaults.headers.common['Access-Control-Allow-Origin'] = window.location.o
 axios.defaults.headers.common['Access-Control-Allow-Methods'] = '*';
 axios.defaults.headers.common['Access-Control-Allow-Headers'] = '*';
 axios.defaults.headers.common['Access-Control-Allow-Credentials'] = '*';
+<<<<<<< HEAD
 new Vue({
     render: h => h(App),
     router,
     vuetify,
     axios,
 }).$mount('#app')
+=======
+
+Vue.prototype.$http = axios;
+Vue.prototype.$httpAnonimo = axios;
+Vue.prototype.$storage = $storage;
+
+Vue.use(vuetify);
+export default new Vue({
+  router,
+  vuetify,
+  axios,
+  render: h => h(App),
+}).$mount('#app')
+>>>>>>> DevMartin
